@@ -47,7 +47,7 @@ const Contact = () => {
           />
           <input
             type="text"
-            name="First&nbsp;Name"
+            name="Last&nbsp;Name"
             placeholder="Last Name *"
             required
           />
@@ -66,7 +66,7 @@ const Contact = () => {
           <span>
             <input
               type="radio"
-              name="Are&nbsp;you&nbsp;attending *"
+              name="Are&nbsp;you&nbsp;attending"
               value="No"
               className="radio-btn"
             />
