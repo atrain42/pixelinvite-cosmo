@@ -147,8 +147,9 @@
 
 @media (max-width: 950px) {
   .header {
-    padding: 100px 25px;
-    padding-bottom: 125px;
+    padding: 75px 25px;
+    /* padding-bottom: 125px; */
+    padding-top: 150px;
   }
 }
 
