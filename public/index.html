@@ -19,67 +19,81 @@
     <title>React App</title>
     <style>
       .loaderOuter {
-        height: 100vh;
-        width: 100vw;
-        background-color: #153045;
-        position: relative;
-        z-index: 2;
-      }
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0eff4;
+  position: relative;
+  z-index: 50;
+}
 
-      .loaderOuter h1 {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Lora", sans-serif;
-        color: #fff;
-      }
-      .loader {
-        width: 48px;
-        height: 48px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .loader:before,
-      .loader:after {
-        content:"";
-        display: block;
-        border: 24px solid transparent;
-        border-color: transparent transparent #fff  #fff;
-        position: absolute;
-        left: 0;
-        top: 0;
-        animation: mvx 2s ease-in;
-      }
-      .loader:before {
-        left: -1px;
-        top: 1px;
-        border-color:#fff  #fff transparent transparent;
-        animation-name:mvrx;
-      }
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  z-index: 51;
+}
 
-  
+.loaderOuter h2 {
+  position: absolute;
+  opacity: 0;
+  top: 58%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 50px;
+  animation: appear 2s linear 2s;
+  z-index: 51;
+}
 
-      @keyframes mvx {
-        0% , 25% {transform: translate(0 , 0) rotate(0deg)}
-        50% {transform: translate(-50% , 50%) rotate(180deg)}
-        100% {transform: translate(0% , 0%) rotate(180deg)}
-      }
-      @keyframes mvrx {
-        0% , 25%  {transform: translate(0 , 0) rotate(0deg)}
-        50% {transform: translate(50% , -50%) rotate(180deg)}
-        100% {transform: translate(0% , 0%) rotate(180deg)}
-      }
-    
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  width: 85px;
+  height: 85px;
+  border: 2px solid #b5abdb;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: rotation 2s ease-in-out alternate;
+  z-index: 51;
+}
+.loader::after {
+  border-color: #afdeb7;
+  animation-direction: alternate-reverse;
+  z-index: 51;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
     </style>
   </head>
   <body>
     <div class="loaderOuter" id="spinner">
-      <span class="loader"></span>
-      <h1>The Smith Baby Shower</h1>
+      <span class="loader">
+      </span>
+      <h2>welcome</h2>
     </div>
     <div id="root"></div>
   </body>
