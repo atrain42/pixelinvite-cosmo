@@ -62,7 +62,7 @@ const Home = () => {
             and your child.”
           </p>
           <ImageGrid />
-          <Link to="/registry">VIEW REGISTRY</Link>
+          <Link to="/rsvp">RSVP</Link>
         </section>
       </div>
     </motion.div>
