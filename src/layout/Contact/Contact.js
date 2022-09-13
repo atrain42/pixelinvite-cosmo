@@ -37,7 +37,7 @@ const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://pixelinvite-ozone.netlify.app/success"
+            value="http://pixelinvite-ozone.netlify.app/success"
           />
           <input
             type="text"
