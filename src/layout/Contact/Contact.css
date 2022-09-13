@@ -1,3 +1,7 @@
+.honeypot {
+  display: none;
+}
+
 .contact {
   background-color: #f0eff4;
   padding-top: 150px;

@@ -3,6 +3,7 @@ import "./Registry.css";
 import baby from "../../img/baby.png";
 import { motion } from "framer-motion";
 import registry from "../../img/registry.jpg";
+import { Navbar, Footer } from "../../components";
 
 const Registry = () => {
   return (
@@ -12,6 +13,7 @@ const Registry = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
+      <Navbar />
       <section className="registry">
         <div className="registry-text">
           <img src={baby} alt="baby" />
@@ -29,6 +31,7 @@ const Registry = () => {
           <a href="https://www.amazon.com/baby-reg/homepage">VIEW REGISTRY</a>
         </div>
       </section>
+      <Footer />
     </motion.div>
   );
 };

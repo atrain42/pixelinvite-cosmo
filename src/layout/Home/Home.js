@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import "./Home.css";
 import couple from "../../img/couple.jpg";
-import { SectionHeader, ImageGrid } from "../../components";
+import { SectionHeader, ImageGrid, Navbar, Footer } from "../../components";
 import heart from "../../img/heart-beat.png";
 
 const Home = () => {
@@ -20,6 +20,7 @@ const Home = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
+      <Navbar />
       <div className="home">
         <header className="header">
           <h1>Beth & Roger</h1>
@@ -65,6 +66,7 @@ const Home = () => {
           <Link to="/rsvp">RSVP</Link>
         </section>
       </div>
+      <Footer />
     </motion.div>
   );
 };

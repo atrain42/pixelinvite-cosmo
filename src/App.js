@@ -6,8 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { useEffect } from "react";
-import { Home, Registry, Contact } from "./layout";
-import { Navbar, Footer } from "./components";
+import { Home, Registry, Contact, Success } from "./layout";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -36,14 +35,13 @@ function App() {
       <Router>
         <ScrollToTop />
         <AnimatePresence exitBeforeEnter>
-          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/registry" element={<Registry />} />
             <Route path="/rsvp" element={<Contact />} />
+            <Route path="/success" element={<Success />} />
           </Routes>
         </AnimatePresence>
-        <Footer />
       </Router>
     )
   );

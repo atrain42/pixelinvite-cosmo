@@ -1,0 +1,35 @@
+.success {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
+
+.success-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-text h1 {
+  font-size: clamp(19px, 8vw, 44px);
+}
+
+.success-text p {
+  width: 100%;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.success a {
+  text-decoration: none;
+  padding: 10px 17.5px;
+  border: 1px solid var(--text-black);
+  cursor: pointer;
+  color: var(--text-black);
+  margin-top: 40px;
+}
