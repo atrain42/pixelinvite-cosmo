@@ -35,8 +35,8 @@ function App() {
     !loading && (
       <Router>
         <ScrollToTop />
-        <Navbar />
         <AnimatePresence exitBeforeEnter>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/registry" element={<Registry />} />
