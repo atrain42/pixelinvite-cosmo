@@ -1,0 +1,52 @@
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f0eff4;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text span {
+  display: flex;
+  align-items: center;
+}
+
+#site {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12.5px;
+  font-family: "Lora", sans-serif;
+}
+
+#site a {
+  color: black;
+}
+
+#heart {
+  height: 20px;
+  width: 20px;
+}
+
+span h1 {
+  font-size: 22px;
+  margin-right: 10px;
+  font-weight: 300;
+}
+
+#loco {
+  display: flex;
+  align-items: center;
+}
+
+#f-mid {
+  margin: 10px 0;
+}

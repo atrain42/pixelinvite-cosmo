@@ -1,0 +1,50 @@
+.dreamcatcher {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.dreamcatcher .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dreamcatcher .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.dreamcatcher .box .dream img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1100px) {
+  .dreamcatcher .box .dream {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .dreamcatcher .box .dream {
+    width: 37.5vw;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .dreamcatcher .box {
+    flex-direction: column;
+  }
+
+  .dreamcatcher .box .dream {
+    width: 100%;
+  }
+}
