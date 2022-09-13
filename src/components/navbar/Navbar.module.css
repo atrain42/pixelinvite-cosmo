@@ -10,7 +10,6 @@
 }
 
 .navOverhang {
-  /* padding: 0rem 5px; */
   display: flex;
   align-items: center;
   height: 60px;
@@ -27,11 +26,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-/* .nav a {
-  cursor: pointer;
-  font-family: "Inter", sans-serif;
-} */
 
 .navButtons button {
   background-color: transparent;
