@@ -28,7 +28,7 @@ const Registry = () => {
             the room. Below is the registry if you would like to help us prepare
             for the baby's arrival.
           </p>
-          <a href="https://www.amazon.com/baby-reg/homepage">VIEW REGISTRY</a>
+          <a className="nav-btn" href="https://www.amazon.com/baby-reg/homepage">VIEW REGISTRY</a>
         </div>
       </section>
       <Footer />

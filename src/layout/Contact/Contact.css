@@ -40,17 +40,6 @@ form {
   /* width: 100%; */
 }
 
-form button {
-  margin: 0 auto;
-  padding: 10px 35px;
-  background-color: transparent;
-  border: 1px solid var(--text-black);
-  margin-top: 50px;
-  font-size: 17px;
-  cursor: pointer;
-  color: var(--text-black);
-}
-
 form input {
   border: none;
   background-color: transparent;

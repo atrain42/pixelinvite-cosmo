@@ -1,0 +1,19 @@
+.thanks {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.thanks h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.thanks p {
+  text-align: center;
+}

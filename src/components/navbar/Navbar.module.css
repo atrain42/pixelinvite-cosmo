@@ -67,7 +67,15 @@
   font-family: "Lora", sans-serif;
   color: var(--text-black);
   font-size: 17px;
+  transition: all 0.15s ease-in;
+  padding: 5px;
 }
+
+@media (hover: hover) {
+  .navLinks li:hover {
+    background-color: #c9c7d4a2;
+  }
+} 
 
 .navLinks h1 {
   font-size: 12.5px;

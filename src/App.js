@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { useEffect } from "react";
-import { Home, Registry, Contact, Success } from "./layout";
+import { Home, Registry, Contact, Success, Thanks } from "./layout";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -21,29 +21,20 @@ function ScrollToTop() {
 }
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const spinner = document.getElementById("spinner");
-  if (spinner) {
-    setTimeout(() => {
-      spinner.style.display = "none";
-      setLoading(false);
-    }, 4000);
-  }
 
   return (
-    !loading && (
-      <Router>
-        <ScrollToTop />
-        <AnimatePresence exitBeforeEnter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/registry" element={<Registry />} />
-            <Route path="/rsvp" element={<Contact />} />
-            <Route path="/success" element={<Success />} />
-          </Routes>
-        </AnimatePresence>
-      </Router>
-    )
+    <Router>
+      <ScrollToTop />
+      <AnimatePresence exitBeforeEnter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/registry" element={<Registry />} />
+          <Route path="/rsvp" element={<Contact />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/thanks" element={<Thanks />} />
+        </Routes>
+      </AnimatePresence>
+    </Router>
   );
 }
 

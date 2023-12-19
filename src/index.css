@@ -24,3 +24,23 @@ html {
 .active {
   border-bottom: 1px solid var(--text-black);
 }
+
+.nav-btn {
+  border: 1px solid var(--text-black);
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px 40px;
+  color: var(--text-black);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+@media (hover: hover) {
+  .nav-btn:hover {
+    border-radius: 15px;
+  }
+}

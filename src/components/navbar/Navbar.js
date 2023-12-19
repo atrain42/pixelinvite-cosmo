@@ -15,15 +15,15 @@ const Navbar = () => {
     <nav className={classes.nav} ref={ref}>
       <div className={classes.navOverhang}>
         <div className={classes.homeButton}>
-          <img src={logo} alt="logo" id="logo"></img>
           <Link
-            to="/"
+            to='/'
             style={{
-              transform: isInView ? "none" : "translateX(20px)",
+              transform: isInView ? 'none' : 'translateX(20px)',
               opacity: isInView ? 1 : 0,
-              transition: "all 0.75s linear 0.75s",
+              transition: 'all 0.75s linear 0.75s',
             }}
           >
+            <img src={logo} alt='logo' id='logo'></img>
             Beth and Roger
           </Link>
         </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
         <MobileNavigation />
       </div>
     </nav>
-  );
+  )
 };
 
 export default Navbar;

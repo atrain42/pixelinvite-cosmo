@@ -63,7 +63,7 @@ const Home = () => {
             and your child.”
           </p>
           <ImageGrid />
-          <Link to="/rsvp">RSVP</Link>
+          <Link className="nav-btn" to="/rsvp">RSVP</Link>
         </section>
       </div>
       <Footer />
