@@ -9,6 +9,11 @@
   padding: 0 25px;
 }
 
+.logoText {
+  display: flex;
+  align-items: center;
+}
+
 .navOverhang {
   display: flex;
   align-items: center;

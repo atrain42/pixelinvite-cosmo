@@ -16,6 +16,7 @@ const Navbar = () => {
       <div className={classes.navOverhang}>
         <div className={classes.homeButton}>
           <Link
+            className={classes.logoText}
             to='/'
             style={{
               transform: isInView ? 'none' : 'translateX(20px)',

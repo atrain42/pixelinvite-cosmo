@@ -16,7 +16,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
+}
+
+.radio-container {
+  cursor: pointer;
 }
 
 .contact-text h1 {
@@ -31,7 +35,7 @@
 .contact-text img {
   height: 40px;
   width: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 form {

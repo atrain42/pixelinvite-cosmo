@@ -50,32 +50,46 @@ const Contact = () => {
           <h1 id='rea'>Are you attending? *</h1>
           <span>
             <input
+              required
               type='radio'
-              name='Are&nbsp;you&nbsp;attending'
+              id='accept'
+              name='rsvp'
               value='Yes'
-              className='radio-btn'
+              className='radio-btn radio-container'
             />
-            <label htmlFor="I'm coming" c>
+            <label
+              for='accept'
+              onclick="selectRadioButton('accept')"
+              className='radio-container'
+            >
               Accept with pleasure
             </label>
           </span>
           <span>
             <input
+              required
               type='radio'
-              name='Are&nbsp;you&nbsp;attending'
+              id='decline'
+              name='rsvp'
               value='No'
-              className='radio-btn'
+              className='radio-btn radio-container'
             />
-            <label htmlFor="I cant't make it">Decline with regret</label>
+            <label
+              for='decline'
+              onclick="selectRadioButton('decline')"
+              className='radio-container'
+            >
+              Decline with regret
+            </label>
           </span>
           <textarea
-            name=''
+            name='message'
             cols='20'
             rows='15'
             placeholder='Message'
           ></textarea>
           <button className='nav-btn' type='submit'>
-            submit
+            Submit
           </button>
         </form>
       </section>
